@@ -4,6 +4,7 @@
 [![License: CERN OHL-S v2](https://img.shields.io/badge/License-CERN%20OHL--S%20v2-green?style=flat-square)](https://gitlab.com/ohwr/project/cernohl/-/wikis/Documents/CERN-OHL-version-2)
 
 # BLAKE2S in VHDL
+This repository is basically an appendix and annex for an academic work [IN PROGRESS, STILL UPLOADING].
 This is a pure VHDL implementation of the BLAKE2s cryptographic hash function, synthesized for the ZYNQ-7000 in the PYNQ-Z1 board. It uses no soft cores, memory blocks or any propietary tools other than generic VHDL. Through the included Python script and UART interface, it is possible to hash any computer file of at least 1 byte, if given enough time...
 There are two variants, «Base» and «Alternativa». The former runs at 62.5 MHz, while the latter runs at 125 MHz.
 
