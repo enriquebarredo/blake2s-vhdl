@@ -164,7 +164,7 @@ def procesar_hash(message_path, digest_size_bytes, key_path, use_key):
 def expo_mode():
     print("======== ======== ======== ======== ======== ======== ======== ========")
     print("📁 ENTRADA DE DATOS")
-    message_path = input("Archivo a hashear: ") or "burunyu.gif"
+    message_path = input("Archivo a hashear: ") or "sleepy_betta_splendens.jpg"
     yn_answer = input("¿Usar clave? (s/n): ").strip()
     # Detecta 's', 'si', 'sí', 'y', 'yes' en cualquier combinación
     use_key = yn_answer.startswith(('s', 'y', 'S', 'Y'))
