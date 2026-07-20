@@ -10,7 +10,7 @@ There are two variants, «Base» and «Alternativa». The former runs at 62.5 MH
 
 ## Contents
 - RTL Schematics: These vector graphics block diagrams can be found as PDF files in «[rtl_schematics](./rtl_schematics)», arranged in a directory structure analogous to the hierarchy of the original VHDL entities. The schematics were generated with Vivado's RTL analysis tool, before any synthesis or optimization was done to the chosen FPGA, to provide a simple overview of the code.
-- VHDL sources: The VHDL files for both accelerator variants can be found in «[vhdl_sources_placeholder](./vhdl_sources_placeholder)», organized with the same hierarchy in the RTL schematics above.
+- VHDL sources: The VHDL files for both accelerator variants can be found in «[sources](./sources)».
 - Constraints File: The Xilinx constraints file (.xdc) that defines pin assignments for the PYNQ-Z1 board is shared by both variants, and can be found in «[constraints_file](./constraints_file)».
 - Python Script: The Python script «[blake2s_hash.py](./python_script/blake2s_hash.py)» interfaces a PC with the UART entities inside the FPGA and automatizes handling of message, hash and key. If running on Linux, one may only need to change the port definition. In the same directory «[python_script](./python_script)» housing it, some of the media and text files that were used to test it can be found. I claim no rights to none of these media files.
 
