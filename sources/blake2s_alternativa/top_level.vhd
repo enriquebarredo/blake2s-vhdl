@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024-2026 Josué Enrique Barredo Alamilla
-# SPDX-License-Identifier: CERN-OHL-S-2.0
+-- SPDX-FileCopyrightText: 2024-2026 Josue Enrique Barredo Alamilla
+-- SPDX-License-Identifier: CERN-OHL-S-2.0
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
