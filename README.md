@@ -3,7 +3,9 @@
 
 [![License: CERN OHL-S v2](https://img.shields.io/badge/License-CERN%20OHL--S%20v2-green?style=flat-square)](https://gitlab.com/ohwr/project/cernohl/-/wikis/Documents/CERN-OHL-version-2)
 
+[THE ACCELERATOR CORES WON'T BE UPLOADED HERE UNTIL THESIS GETS ACCEPTED BY LIBRARY?]
 # BLAKE2S in VHDL
+[A TIMING DIAGRAM WOULD LOOK GOOD HERE]
 This repository is the appendix for a UNAM undergraduate thesis, which «translated» the reference BLAKE2s implementation in [RFC 7693](https://datatracker.ietf.org/doc/rfc7693/) into VHDL through RTL methodology, and deployed it on the ZYNQ-7000 FPGA (PYNQ-Z1 board).
 Owing to the fact the design used no hard or soft IP, not even memory blocks, its standard VHDL should synthesize to virtually any FPGA, irrespective of vendor, though timing issues might arise.
 The two shared variants both execute the four mixing «G» functions in a compression step concurrently, instead of one at a time, but differ in their internal handling of the individual «G» function:
