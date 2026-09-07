@@ -3,9 +3,10 @@
 
 [![License: CERN OHL-S v2](https://img.shields.io/badge/License-CERN%20OHL--S%20v2-green?style=flat-square)](https://gitlab.com/ohwr/project/cernohl/-/wikis/Documents/CERN-OHL-version-2)
 
-[THE ACCELERATOR CORES WON'T BE UPLOADED HERE UNTIL THESIS GETS ACCEPTED BY LIBRARY?]
+
 # BLAKE2S in VHDL
-[A TIMING DIAGRAM WOULD LOOK GOOD HERE]
+Accelerator core files have been added!
+<--[A TIMING DIAGRAM WOULD LOOK GOOD HERE]-->
 This repository is the appendix for a UNAM undergraduate thesis, which «translated» the reference BLAKE2s implementation in [RFC 7693](https://datatracker.ietf.org/doc/rfc7693/) into VHDL through RTL methodology, and deployed it on the ZYNQ-7000 FPGA (PYNQ-Z1 board).
 Owing to the fact the design used no hard or soft IP, not even memory blocks, its standard VHDL should synthesize to virtually any FPGA, irrespective of vendor, though timing issues might arise.
 The two shared variants both execute the four mixing «G» functions in a compression step concurrently, instead of one at a time, but differ in their internal handling of the individual «G» function:
@@ -23,7 +24,7 @@ Because this is technically a cybersecurity topic, I feel obligated to advise yo
 
 ## Testing
 To hash files, a Python script and two extra VHDL entities («Subsistema de Recepción» and «Subsistema de Transmisión») link the BLAKE2s accelerator to a PC via a USB-UART adapter (I used a generic one costing ~30 MXN). You will need to connect this adapter to the PC running the Python script and the FPGA with the synthesized design.
-[MIGHT NEED TO ADD A DIAGRAM OF THE WIRING OR A PHOTO]
+<--[A WIRING DIAGRAM O OR A PHOTO WOULD LOOK GOOD HERE]-->
 Even though the accelerator supports keyed hashing (HMAC) of empty files, I chose not to support the keyless hashing of empty files, as there are only 32 possible unique digests for this case.
 Additionally, even though the accelerator supports the maximum theoretical message size (~18.4 exabytes), the UART interface makes time the practical bottleneck--it runs at 2 million baud, which means transferring a 1 GB file takes 1 hour and 23 minutes.
 
